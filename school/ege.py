@@ -49,7 +49,7 @@ def f(n):
     elif n >1:
         return f(n-1)*(n-1)
 print(f(6))
-"""
+
 def f(x,y):
     if x>y or x==18:
         return 0
@@ -58,6 +58,7 @@ def f(x,y):
     else:
         return f(x+1,y)+f(x*2,y)
 print(f(1,10)*f(10,21))
+"""
 
 
 
