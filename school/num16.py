@@ -27,19 +27,7 @@ def f(x,y):
     
 print(f(48,25)*f(25,17)*f(17,4))
 
-def f(x,y):
-    if x<y or x==28:
-        return 0
-    if x==y:
-        return 1
-    if x>y:
-        if x%2==0:
-            return f(x-2,y)+f(x/2,y)
-        elif x%2!=0:
-            return f(x-2,y)+f(x-3,y)
-
-print(f(98,1))
-
+print()
 def f(x,y,s):
     if x<y:
         return 0
@@ -53,4 +41,3 @@ def f(x,y,s):
 
 print(f(40,1,""))
 """
-
