@@ -27,7 +27,6 @@ def f(x,y):
     
 print(f(48,25)*f(25,17)*f(17,4))
 
-print()
 def f(x,y,s):
     if x<y:
         return 0
