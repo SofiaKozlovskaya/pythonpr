@@ -22,7 +22,7 @@ for n in range(1,1000):
         best_diff = diff
         best = R
 print(best)
-"""
+
 
 
 def tri(n):
@@ -47,3 +47,15 @@ for n in range(1,1000):
         s.append(R)
         
 print(min(s))
+"""
+k=[]
+for n in range(1,1000):
+    s = bin(n)[2:]  # перевод в двоичную систему
+    s = str(s)
+    s += str(s.count("1") % 2)
+    s += str(s.count("1") % 2)
+    r = int(s, 2)  # перевод в десятичную систему
+    if r>170:
+        k.append(n)
+
+print(min(k))

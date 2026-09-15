@@ -37,7 +37,7 @@ for d in range(40,1,-1):
         print(d)
         break
 
-"""
+
 #4
 def check_no_adjacent_duplicates(number):
     # Превращаем число в строку, чтобы можно было перебирать цифры
@@ -62,7 +62,7 @@ for a1 in "123456789ABC":
                     if s.count("0")==1 and check_no_adjacent_duplicates(s) is True:
                         k+=1
 print(k)
-"""
+
 #5
 k=0
 k1=0
@@ -78,3 +78,14 @@ for a1 in "АЖИМНУЧ":
                             k1+=1
 print(k1)
 """
+k=0
+      
+for a1 in "АПРСУ":
+    for a2 in "АПРСУ":
+        for a3 in "АПРСУ":
+            for a4 in "АПРСУ":
+                for a5 in "АПРСУ":
+                    s=a1+a2+a3+a4+a5
+                    k+=1
+                    if s.count("У")<=1 and s.count("АA")==0:
+                        print(k)
